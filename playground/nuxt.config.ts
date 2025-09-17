@@ -50,6 +50,13 @@ export default defineNuxtConfig({
     },
   },
   compatibilityDate: '2025-07-15',
+  vite: {
+    resolve: {
+      alias: {
+        '.prisma/client/index-browser': './node_modules/.prisma/client/index-browser.js',
+      },
+    },
+  },
   eslint: {
     config: {
       stylistic: true,
@@ -61,6 +68,9 @@ export default defineNuxtConfig({
   },
   pinia: {
     storesDirs: ['./stores/**'],
+  },
+  prisma: {
+    autoSetupPrisma: true,
   },
   stylelint: {
     lintOnStart: true,

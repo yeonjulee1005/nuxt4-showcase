@@ -16,7 +16,7 @@ useSeoMeta({})
 <template>
   <ScApp :toaster="appConfig.toaster">
     <NuxtLayout>
-      <RouterView />
+      <NuxtPage />
     </NuxtLayout>
   </ScApp>
 </template>
