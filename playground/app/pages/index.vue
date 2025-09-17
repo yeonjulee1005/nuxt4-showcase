@@ -37,7 +37,7 @@ const changeCount = (type: 'up' | 'down') => {
       <span class="text-lg font-bold">
         스토어에서 결과 확인하기!
       </span>
-      <FirstUser />
+      <NuxtIsland name="FirstUser" />
       <span class="text-lg font-bold">
         {{ introCountUp }}
       </span>

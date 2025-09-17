@@ -1,7 +1,7 @@
 <script setup>
-import { usePrismaClient } from '@prisma/nuxt'
+import { PrismaClient } from '@prisma/client'
 
-const prisma = usePrismaClient()
+const prisma = new PrismaClient()
 const firstUserFound = await prisma.user.findMany()
 </script>
 
