@@ -1,6 +1,4 @@
 <script setup lang="ts">
-const { back } = useRouter()
-
 const { visitFileUpload, fileUploadValue } = storeToRefs(useShocaseStore())
 
 useHead({
@@ -12,9 +10,6 @@ useHead({
 
 definePageMeta({
   layout: 'default',
-  // middleware: [
-  //   'middleware',
-  // ],
 })
 
 onMounted(() => {
@@ -24,13 +19,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex flex-col gap-y-4 p-4">
-    <div class="flex justify-start">
-      <ScButton size="xl" @click="back()">
-        뒤로가기
-      </ScButton>
-    </div>
-    <div class="w-[300px] h-[calc(100vh-100px)] flex flex-col items-center justify-center gap-y-4 mx-auto">
+  <NuxtUi>
+    <template #component>
       <ScFileUpload
         v-model="fileUploadValue"
         icon="i-akar-icons:cloud-upload"
@@ -40,10 +30,6 @@ onMounted(() => {
         label="여기에 이미지를 넣어주세요!"
         class="w-96 min-h-48"
       />
-    </div>
-  </div>
+    </template>
+  </NuxtUi>
 </template>
-
-<style scoped lang="scss">
-  /* Add your styles here */
-</style>

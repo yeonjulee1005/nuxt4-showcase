@@ -7,7 +7,9 @@
     "dev": "nuxt dev --port 9000",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name"
   },
   "dependencies": {
     "@nuxt/eslint": "1.9.0",

@@ -140,7 +140,3 @@ console.log(fileUploadValue.value)
     </ScCard>
   </div>
 </template>
-
-<style scoped lang="scss">
-  /* Add your styles here */
-</style>

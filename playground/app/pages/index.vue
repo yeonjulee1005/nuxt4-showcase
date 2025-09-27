@@ -37,7 +37,6 @@ const changeCount = (type: 'up' | 'down') => {
       <span class="text-lg font-bold">
         스토어에서 결과 확인하기!
       </span>
-      <NuxtIsland name="FirstUser" />
       <span class="text-lg font-bold">
         {{ introCountUp }}
       </span>
@@ -64,12 +63,16 @@ const changeCount = (type: 'up' | 'down') => {
         </ScButtonGroup>
       </template>
     </ScCard>
+
+    <ScCard>
+      <p>
+        Prisma Example
+      </p>
+      <NuxtIsland name="FirstUser" />
+    </ScCard>
+
     <ScButton size="xl" @click="handleClick">
       잘못된 페이지 이동 해보기
     </ScButton>
   </div>
 </template>
-
-<style scoped lang="scss">
-  /* Add your styles here */
-</style>

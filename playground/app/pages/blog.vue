@@ -8,9 +8,6 @@ useHead({
 
 definePageMeta({
   layout: 'navigation',
-  // middleware: [
-  //   'middleware',
-  // ],
 })
 </script>
 
@@ -33,7 +30,3 @@ definePageMeta({
     </NuxtLink>
   </div>
 </template>
-
-<style scoped lang="scss">
-  /* Add your styles here */
-</style>
